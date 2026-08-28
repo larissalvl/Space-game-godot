@@ -33,7 +33,7 @@ Projeto de aprendizado da Godot Engine — desenvolvido enquanto estudo a engine
 
 Registro do que foi implementado a cada etapa de aprendizado.
 
-- **[data]** — Setup inicial do projeto, criação da nave com movimento via input do teclado, cenário com fundo.
+- **[27/08/2026]** — Setup inicial do projeto, criação da nave com movimento via input do teclado, cenário com fundo.
 
 <!--
 Como atualizar: a cada avanço relevante no jogo, adicione uma linha nova aqui
