@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bfjatdruetlo8"]
+
+[ext_resource type="PackedScene" uid="uid://d1krcvbi30bie" path="res://nave.tscn" id="1_4o364"]
+[ext_resource type="Script" uid="uid://cagbl8w07tu4q" path="res://fundo.gd" id="1_ihpo2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ihpo2"]
+
+[node name="Fase" type="Node2D" unique_id=2069730291]
+
+[node name="Fundo" type="Parallax2D" parent="." unique_id=1482744204]
+script = ExtResource("1_ihpo2")
+
+[node name="Estrelas" type="AnimatedSprite2D" parent="Fundo" unique_id=249931261]
+sprite_frames = SubResource("SpriteFrames_ihpo2")
+
+[node name="Nave" parent="." unique_id=639437660 instance=ExtResource("1_4o364")]
+
+[node name="Camera2D" type="Camera2D" parent="Nave" unique_id=2041869731]
+position_smoothing_enabled = true
