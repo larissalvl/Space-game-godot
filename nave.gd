@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var velNave = 400
+var velNave = 250
 var velAngular = PI
 
 func _ready():

@@ -2,18 +2,39 @@
 
 [ext_resource type="PackedScene" uid="uid://d1krcvbi30bie" path="res://nave.tscn" id="1_4o364"]
 [ext_resource type="Script" uid="uid://cagbl8w07tu4q" path="res://fundo.gd" id="1_ihpo2"]
+[ext_resource type="Script" uid="uid://c8s1svi6oy6e0" path="res://introCutScene.gd" id="1_udkue"]
+[ext_resource type="Texture2D" uid="uid://dvsctfwtb5g21" path="res://Terra-24be.png" id="3_qcukj"]
+[ext_resource type="Texture2D" uid="uid://dgvwr7147ro15" path="res://Marte-24bb.png" id="4_vyao0"]
+[ext_resource type="Texture2D" uid="uid://v8ra1pgvgvix" path="res://Mercúrio-24b2.png" id="5_mtfop"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ihpo2"]
 
-[node name="Fase" type="Node2D" unique_id=2069730291]
+[node name="introCutScene" type="Node2D" unique_id=2069730291]
+script = ExtResource("1_udkue")
 
-[node name="Fundo" type="Parallax2D" parent="." unique_id=1482744204]
+[node name="Background" type="Parallax2D" parent="." unique_id=1482744204]
 script = ExtResource("1_ihpo2")
 
-[node name="Estrelas" type="AnimatedSprite2D" parent="Fundo" unique_id=249931261]
+[node name="Estrelas" type="AnimatedSprite2D" parent="Background" unique_id=249931261]
 sprite_frames = SubResource("SpriteFrames_ihpo2")
 
-[node name="Nave" parent="." unique_id=639437660 instance=ExtResource("1_4o364")]
+[node name="Earth" type="Sprite2D" parent="." unique_id=895814719]
+position = Vector2(465.99997, 440)
+rotation = 0.050614547
+texture = ExtResource("3_qcukj")
 
-[node name="Camera2D" type="Camera2D" parent="Nave" unique_id=2041869731]
+[node name="Mars" type="Sprite2D" parent="." unique_id=1426290201]
+position = Vector2(6466, 558)
+scale = Vector2(0.53, 0.53)
+texture = ExtResource("4_vyao0")
+
+[node name="Mercury" type="Sprite2D" parent="." unique_id=684520471]
+position = Vector2(-6609, 356)
+scale = Vector2(0.38, 0.38)
+texture = ExtResource("5_mtfop")
+
+[node name="Ship" parent="." unique_id=639437660 instance=ExtResource("1_4o364")]
+position = Vector2(460, 336)
+
+[node name="Camera2D" type="Camera2D" parent="Ship" unique_id=2041869731]
 position_smoothing_enabled = true

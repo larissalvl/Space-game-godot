@@ -1,21 +1,25 @@
 [gd_scene format=3 uid="uid://d1krcvbi30bie"]
 
-[ext_resource type="Texture2D" uid="uid://ctf4imfoqxanc" path="res://nave_frame_0 (1).png" id="1_j1vys"]
 [ext_resource type="Script" uid="uid://xdxei8ob88fq" path="res://nave.gd" id="1_jemat"]
-[ext_resource type="Texture2D" uid="uid://fvo3irdiscpn" path="res://nave_frame_2 (1).png" id="2_jemat"]
-[ext_resource type="Texture2D" uid="uid://crw8krggl8nl6" path="res://nave_frame_1 (1).png" id="3_53dx7"]
+[ext_resource type="Texture2D" uid="uid://umgyddx371j3" path="res://Nave_0.png" id="2_53dx7"]
+[ext_resource type="Texture2D" uid="uid://c80ksgoetrolv" path="res://Nave_1.png" id="3_6rt8y"]
+[ext_resource type="Texture2D" uid="uid://io3nsbng7670" path="res://Nave_3.png" id="4_1poy6"]
+[ext_resource type="Texture2D" uid="uid://cxv281uoju7f3" path="res://Nave_2.png" id="5_xqbh8"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gxb6x"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_j1vys")
+"texture": ExtResource("2_53dx7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_jemat")
+"texture": ExtResource("3_6rt8y")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_53dx7")
+"texture": ExtResource("4_1poy6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_xqbh8")
 }],
 "loop": 1,
 "name": &"nave",
@@ -34,7 +38,7 @@ scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_gxb6x")
 animation = &"nave"
 autoplay = "nave"
-frame_progress = 0.50678056
+frame_progress = 0.9821299
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1492638287]
 position = Vector2(0.99998975, 1)
