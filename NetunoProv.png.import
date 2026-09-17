@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bo2ys0jp2deg8"
-path="res://.godot/imported/terra.png-9d02f12eb6a7911ee9cf945ff8b3effd.ctex"
+uid="uid://bgacojomppcyg"
+path="res://.godot/imported/NetunoProv.png-22df311ced98832c50ae4a166fa91f3d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://terra.png"
-dest_files=["res://.godot/imported/terra.png-9d02f12eb6a7911ee9cf945ff8b3effd.ctex"]
+source_file="res://NetunoProv.png"
+dest_files=["res://.godot/imported/NetunoProv.png-22df311ced98832c50ae4a166fa91f3d.ctex"]
 
 [params]
 

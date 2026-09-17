@@ -6,6 +6,11 @@
 [ext_resource type="Texture2D" uid="uid://dvsctfwtb5g21" path="res://Terra-24be.png" id="3_qcukj"]
 [ext_resource type="Texture2D" uid="uid://dgvwr7147ro15" path="res://Marte-24bb.png" id="4_vyao0"]
 [ext_resource type="Texture2D" uid="uid://v8ra1pgvgvix" path="res://Mercúrio-24b2.png" id="5_mtfop"]
+[ext_resource type="Texture2D" uid="uid://7q7b4diq2580" path="res://VenusProv.png" id="6_pxy8h"]
+[ext_resource type="Texture2D" uid="uid://dmm1ht7xj5mem" path="res://JupiterProv.png" id="7_ha42c"]
+[ext_resource type="Texture2D" uid="uid://cx7xwql0kogjm" path="res://SaturnProv.png" id="8_v5dtk"]
+[ext_resource type="Texture2D" uid="uid://c8fl0r3om7dx8" path="res://UranoProv.png" id="9_tq5n8"]
+[ext_resource type="Texture2D" uid="uid://bgacojomppcyg" path="res://NetunoProv.png" id="10_3hdrk"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ihpo2"]
 
@@ -24,14 +29,39 @@ rotation = 0.050614547
 texture = ExtResource("3_qcukj")
 
 [node name="Mars" type="Sprite2D" parent="." unique_id=1426290201]
-position = Vector2(6466, 558)
+position = Vector2(1702, -1060)
 scale = Vector2(0.53, 0.53)
 texture = ExtResource("4_vyao0")
 
 [node name="Mercury" type="Sprite2D" parent="." unique_id=684520471]
-position = Vector2(-6609, 356)
+position = Vector2(-3467, 59)
 scale = Vector2(0.38, 0.38)
 texture = ExtResource("5_mtfop")
+
+[node name="VenusProv" type="Sprite2D" parent="." unique_id=568720502]
+position = Vector2(-2780, -1606)
+scale = Vector2(0.95, 0.95)
+texture = ExtResource("6_pxy8h")
+
+[node name="JupiterProv" type="Sprite2D" parent="." unique_id=2121064669]
+position = Vector2(10538, 7923)
+scale = Vector2(10.97, 10.97)
+texture = ExtResource("7_ha42c")
+
+[node name="SaturnProv" type="Sprite2D" parent="." unique_id=596197587]
+position = Vector2(6966, 26234)
+scale = Vector2(9.14, 9.14)
+texture = ExtResource("8_v5dtk")
+
+[node name="UranoProv" type="Sprite2D" parent="." unique_id=491449340]
+position = Vector2(-21301, 52340)
+scale = Vector2(3.98, 3.98)
+texture = ExtResource("9_tq5n8")
+
+[node name="NetunoProv" type="Sprite2D" parent="." unique_id=50478450]
+position = Vector2(77329, 43667)
+scale = Vector2(3.86, 3.86)
+texture = ExtResource("10_3hdrk")
 
 [node name="Ship" parent="." unique_id=639437660 instance=ExtResource("1_4o364")]
 position = Vector2(460, 336)
