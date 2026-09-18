@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://cx7xwql0kogjm" path="res://SaturnProv.png" id="8_v5dtk"]
 [ext_resource type="Texture2D" uid="uid://c8fl0r3om7dx8" path="res://UranoProv.png" id="9_tq5n8"]
 [ext_resource type="Texture2D" uid="uid://bgacojomppcyg" path="res://NetunoProv.png" id="10_3hdrk"]
+[ext_resource type="Script" uid="uid://d2xd014tkqm4d" path="res://mini_map.gd" id="12_ha42c"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ihpo2"]
 
@@ -23,48 +24,65 @@ script = ExtResource("1_ihpo2")
 [node name="Estrelas" type="AnimatedSprite2D" parent="Background" unique_id=249931261]
 sprite_frames = SubResource("SpriteFrames_ihpo2")
 
-[node name="Earth" type="Sprite2D" parent="." unique_id=895814719]
+[node name="Earth" type="Sprite2D" parent="." unique_id=895814719 groups=["planetas"]]
 position = Vector2(465.99997, 440)
 rotation = 0.050614547
 texture = ExtResource("3_qcukj")
 
-[node name="Mars" type="Sprite2D" parent="." unique_id=1426290201]
+[node name="Mars" type="Sprite2D" parent="." unique_id=1426290201 groups=["planetas"]]
 position = Vector2(1702, -1060)
 scale = Vector2(0.53, 0.53)
 texture = ExtResource("4_vyao0")
 
-[node name="Mercury" type="Sprite2D" parent="." unique_id=684520471]
+[node name="Mercury" type="Sprite2D" parent="." unique_id=684520471 groups=["planetas"]]
 position = Vector2(-3467, 59)
 scale = Vector2(0.38, 0.38)
 texture = ExtResource("5_mtfop")
 
-[node name="VenusProv" type="Sprite2D" parent="." unique_id=568720502]
+[node name="VenusProv" type="Sprite2D" parent="." unique_id=568720502 groups=["planetas"]]
 position = Vector2(-2780, -1606)
 scale = Vector2(0.95, 0.95)
 texture = ExtResource("6_pxy8h")
 
-[node name="JupiterProv" type="Sprite2D" parent="." unique_id=2121064669]
+[node name="JupiterProv" type="Sprite2D" parent="." unique_id=2121064669 groups=["planetas"]]
 position = Vector2(10538, 7923)
 scale = Vector2(10.97, 10.97)
 texture = ExtResource("7_ha42c")
 
-[node name="SaturnProv" type="Sprite2D" parent="." unique_id=596197587]
+[node name="SaturnProv" type="Sprite2D" parent="." unique_id=596197587 groups=["planetas"]]
 position = Vector2(6966, 26234)
 scale = Vector2(9.14, 9.14)
 texture = ExtResource("8_v5dtk")
 
-[node name="UranoProv" type="Sprite2D" parent="." unique_id=491449340]
+[node name="UranoProv" type="Sprite2D" parent="." unique_id=491449340 groups=["planetas"]]
 position = Vector2(-21301, 52340)
 scale = Vector2(3.98, 3.98)
 texture = ExtResource("9_tq5n8")
 
-[node name="NetunoProv" type="Sprite2D" parent="." unique_id=50478450]
+[node name="NetunoProv" type="Sprite2D" parent="." unique_id=50478450 groups=["planetas"]]
 position = Vector2(77329, 43667)
 scale = Vector2(3.86, 3.86)
 texture = ExtResource("10_3hdrk")
 
-[node name="Ship" parent="." unique_id=639437660 instance=ExtResource("1_4o364")]
+[node name="Ship" parent="." unique_id=639437660 groups=["nave"] instance=ExtResource("1_4o364")]
 position = Vector2(460, 336)
 
 [node name="Camera2D" type="Camera2D" parent="Ship" unique_id=2041869731]
 position_smoothing_enabled = true
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=127837447]
+
+[node name="miniMap" type="Control" parent="HUD" unique_id=1090034583]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -90.0
+offset_right = -50.0
+offset_bottom = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+script = ExtResource("12_ha42c")

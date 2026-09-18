@@ -27,13 +27,15 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ltewx"]
-radius = 40.0
+radius = 19.026299
 
 [node name="Nave" type="CharacterBody2D" unique_id=639437660]
 position = Vector2(387, 188)
 script = ExtResource("1_jemat")
+metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1231320679]
+position = Vector2(0.2000122, -0.80000305)
 scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_gxb6x")
 animation = &"nave"
@@ -41,5 +43,5 @@ autoplay = "nave"
 frame_progress = 0.9821299
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1492638287]
-position = Vector2(0.99998975, 1)
+position = Vector2(1.2000008, 0.19999695)
 shape = SubResource("CircleShape2D_ltewx")
