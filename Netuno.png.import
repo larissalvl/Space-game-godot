@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmm1ht7xj5mem"
-path="res://.godot/imported/JupiterProv.png-d8ce21a7f02fd4ab4df7abaa1c583c10.ctex"
+uid="uid://dv5ewxykjshr7"
+path="res://.godot/imported/Netuno.png-5bb817aa0eab423b1f794f2f99c226fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://JupiterProv.png"
-dest_files=["res://.godot/imported/JupiterProv.png-d8ce21a7f02fd4ab4df7abaa1c583c10.ctex"]
+source_file="res://Netuno.png"
+dest_files=["res://.godot/imported/Netuno.png-5bb817aa0eab423b1f794f2f99c226fb.ctex"]
 
 [params]
 

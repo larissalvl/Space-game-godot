@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cx7xwql0kogjm"
-path="res://.godot/imported/SaturnProv.png-02fb8ccaec41674019b4a028112dadf3.ctex"
+uid="uid://p8taqkj5lnok"
+path="res://.godot/imported/Jupiter.png-86453fd1381e4b27b92b6075da0fe4b1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SaturnProv.png"
-dest_files=["res://.godot/imported/SaturnProv.png-02fb8ccaec41674019b4a028112dadf3.ctex"]
+source_file="res://Jupiter.png"
+dest_files=["res://.godot/imported/Jupiter.png-86453fd1381e4b27b92b6075da0fe4b1.ctex"]
 
 [params]
 

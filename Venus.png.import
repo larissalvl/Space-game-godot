@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7q7b4diq2580"
-path="res://.godot/imported/VenusProv.png-ba4001f97e01f1c83ad51ed8287093be.ctex"
+uid="uid://dxy6b7se5ghp6"
+path="res://.godot/imported/Venus.png-c9b3024131bb2435eacba4ad4e4cf271.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://VenusProv.png"
-dest_files=["res://.godot/imported/VenusProv.png-ba4001f97e01f1c83ad51ed8287093be.ctex"]
+source_file="res://Venus.png"
+dest_files=["res://.godot/imported/Venus.png-c9b3024131bb2435eacba4ad4e4cf271.ctex"]
 
 [params]
 

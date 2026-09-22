@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8fl0r3om7dx8"
-path="res://.godot/imported/UranoProv.png-5b7e07a9411f133537e68c233c6bc0f4.ctex"
+uid="uid://d1wm7m0e3od63"
+path="res://.godot/imported/Saturno_1254px.png-7e576bf449ee1fab9dcb171c81919224.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UranoProv.png"
-dest_files=["res://.godot/imported/UranoProv.png-5b7e07a9411f133537e68c233c6bc0f4.ctex"]
+source_file="res://Saturno_1254px.png"
+dest_files=["res://.godot/imported/Saturno_1254px.png-7e576bf449ee1fab9dcb171c81919224.ctex"]
 
 [params]
 
