@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://bfjatdruetlo8"]
+
+[ext_resource type="Script" uid="uid://c8s1svi6oy6e0" path="res://scripts/introCutScene.gd" id="1_qstax"]
+[ext_resource type="Script" uid="uid://cagbl8w07tu4q" path="res://scripts/fundo.gd" id="2_h5v22"]
+[ext_resource type="Texture2D" uid="uid://dvsctfwtb5g21" path="res://planetas/sprites/Terra.png" id="3_qmcej"]
+[ext_resource type="Script" uid="uid://c71oduiq8uojd" path="res://scripts/planetas.gd" id="4_fpkt3"]
+[ext_resource type="Texture2D" uid="uid://bo838wrimpr67" path="res://planetas/spritesMinimapa/TerraMinimapa.png" id="5_3x241"]
+[ext_resource type="Texture2D" uid="uid://mp6ca85ly4sm" path="res://planetas/spritesMinimapa/MarteMinimapa.png" id="6_vfp0g"]
+[ext_resource type="Texture2D" uid="uid://byk7jd72pinq" path="res://planetas/spritesMinimapa/MercurioMinimapa.png" id="7_kmcl0"]
+[ext_resource type="Texture2D" uid="uid://dxy6b7se5ghp6" path="res://planetas/sprites/Venus.png" id="8_5mq8j"]
+[ext_resource type="Texture2D" uid="uid://vj5m8g6mrh2u" path="res://planetas/spritesMinimapa/VenusMinimapa.png" id="9_y1eh0"]
+[ext_resource type="Texture2D" uid="uid://dmoq4vwbmybiy" path="res://planetas/spritesMinimapa/JupiterMinimapa.png" id="10_jevni"]
+[ext_resource type="Texture2D" uid="uid://d1wm7m0e3od63" path="res://planetas/sprites/Saturno.png" id="11_r8ecn"]
+[ext_resource type="Texture2D" uid="uid://clmnrffcyon7r" path="res://planetas/spritesMinimapa/SaturnoMinimapa.png" id="12_5ncfi"]
+[ext_resource type="Texture2D" uid="uid://cqiymls6y7hvi" path="res://planetas/sprites/Urano.png" id="13_urgkv"]
+[ext_resource type="Texture2D" uid="uid://bwqe8i73fdin7" path="res://planetas/spritesMinimapa/UranoMinimapa.png" id="14_igsgx"]
+[ext_resource type="Texture2D" uid="uid://dv5ewxykjshr7" path="res://planetas/sprites/Netuno.png" id="15_x0m31"]
+[ext_resource type="Texture2D" uid="uid://bl41ryxiy80gk" path="res://planetas/spritesMinimapa/NetunoMinimap.png" id="16_qstax"]
+[ext_resource type="PackedScene" uid="uid://d1krcvbi30bie" path="res://cenas/nave.tscn" id="17_yvdtj"]
+[ext_resource type="Script" uid="uid://d2xd014tkqm4d" path="res://scripts/mini_map.gd" id="18_pjouo"]
+[ext_resource type="Texture2D" uid="uid://v7qen5qxqwu6" path="res://naveSprites/NaveMinimapa.png" id="19_1bctn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ihpo2"]
+
+[node name="introCutScene" type="Node2D" unique_id=2069730291]
+script = ExtResource("1_qstax")
+
+[node name="Background" type="Parallax2D" parent="." unique_id=1482744204]
+script = ExtResource("2_h5v22")
+
+[node name="Estrelas" type="AnimatedSprite2D" parent="Background" unique_id=249931261]
+sprite_frames = SubResource("SpriteFrames_ihpo2")
+
+[node name="Earth" type="Sprite2D" parent="." unique_id=895814719 groups=["planetas"]]
+position = Vector2(465.99997, 440)
+rotation = 0.050614547
+texture = ExtResource("3_qmcej")
+script = ExtResource("4_fpkt3")
+icone_planeta_minimapa = ExtResource("5_3x241")
+
+[node name="Mars" type="Sprite2D" parent="." unique_id=1426290201 groups=["planetas"]]
+position = Vector2(1702, -1060)
+scale = Vector2(0.53, 0.53)
+script = ExtResource("4_fpkt3")
+icone_planeta_minimapa = ExtResource("6_vfp0g")
+
+[node name="Mercury" type="Sprite2D" parent="." unique_id=684520471 groups=["planetas"]]
+position = Vector2(-3467, 59)
+scale = Vector2(0.38, 0.38)
+script = ExtResource("4_fpkt3")
+icone_planeta_minimapa = ExtResource("7_kmcl0")
+
+[node name="Venus" type="Sprite2D" parent="." unique_id=568720502 groups=["planetas"]]
+position = Vector2(-2780, -1606)
+scale = Vector2(0.95, 0.95)
+texture = ExtResource("8_5mq8j")
+script = ExtResource("4_fpkt3")
+icone_planeta_minimapa = ExtResource("9_y1eh0")
+
+[node name="Jupiter" type="Sprite2D" parent="." unique_id=2121064669 groups=["planetas"]]
+position = Vector2(10538, 7923)
+scale = Vector2(2.239, 2.239)
+script = ExtResource("4_fpkt3")
+icone_planeta_minimapa = ExtResource("10_jevni")
+
+[node name="Saturn" type="Sprite2D" parent="." unique_id=596197587 groups=["planetas"]]
+position = Vector2(6966, 26234)
+scale = Vector2(1.866, 1.866)
+texture = ExtResource("11_r8ecn")
+script = ExtResource("4_fpkt3")
+icone_planeta_minimapa = ExtResource("12_5ncfi")
+
+[node name="Urano" type="Sprite2D" parent="." unique_id=491449340 groups=["planetas"]]
+position = Vector2(-21301, 52340)
+scale = Vector2(3.98, 3.98)
+texture = ExtResource("13_urgkv")
+script = ExtResource("4_fpkt3")
+icone_planeta_minimapa = ExtResource("14_igsgx")
+
+[node name="Netuno" type="Sprite2D" parent="." unique_id=50478450 groups=["planetas"]]
+position = Vector2(77329, 43667)
+scale = Vector2(3.86, 3.86)
+texture = ExtResource("15_x0m31")
+script = ExtResource("4_fpkt3")
+icone_planeta_minimapa = ExtResource("16_qstax")
+
+[node name="Ship" parent="." unique_id=639437660 groups=["nave"] instance=ExtResource("17_yvdtj")]
+position = Vector2(460, 336)
+
+[node name="Camera2D" type="Camera2D" parent="Ship" unique_id=2041869731]
+position_smoothing_enabled = true
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=127837447]
+
+[node name="miniMap" type="Control" parent="HUD" unique_id=1090034583]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -90.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 0
+grow_vertical = 0
+script = ExtResource("18_pjouo")
+icone_nave_minimapa = ExtResource("19_1bctn")
