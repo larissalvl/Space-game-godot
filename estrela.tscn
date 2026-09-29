@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://dgmgdpct80vqn"]
+
+[ext_resource type="Texture2D" uid="uid://y85m2xaxhibj" path="res://estrelasSprites/estrela_1.PNG" id="1_2i8xd"]
+[ext_resource type="Texture2D" uid="uid://d11yffr0n7lmj" path="res://estrelasSprites/estrela_2.PNG" id="2_34qhf"]
+[ext_resource type="Texture2D" uid="uid://duyhp4h5f47lp" path="res://estrelasSprites/estrela_3.PNG" id="3_sg4fv"]
+[ext_resource type="Texture2D" uid="uid://by2s1gdqgsty" path="res://estrelasSprites/estrela_4.PNG" id="4_p2dhu"]
+[ext_resource type="Texture2D" uid="uid://rd24x3yn3brv" path="res://estrelasSprites/estrela_5.PNG" id="5_qq386"]
+[ext_resource type="Script" uid="uid://djin477r6lv5l" path="res://estrela.gd" id="6_34qhf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1gg3y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2i8xd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_34qhf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_sg4fv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_p2dhu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qq386")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_p2dhu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_34qhf")
+}],
+"loop": 1,
+"name": &"brilhar",
+"speed": 5.0
+}]
+
+[node name="estrela" type="AnimatedSprite2D" unique_id=546650578]
+position = Vector2(249, 91)
+scale = Vector2(0.01, 0.01)
+sprite_frames = SubResource("SpriteFrames_1gg3y")
+animation = &"brilhar"
+autoplay = "brilhar"
+frame_progress = 0.45453638
+script = ExtResource("6_34qhf")

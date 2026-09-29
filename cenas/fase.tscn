@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bfjatdruetlo8"]
 
-[ext_resource type="Script" uid="uid://c8s1svi6oy6e0" path="res://scripts/introCutScene.gd" id="1_qstax"]
+[ext_resource type="PackedScene" uid="uid://dgmgdpct80vqn" path="res://estrela.tscn" id="2_fpkt3"]
 [ext_resource type="Script" uid="uid://cagbl8w07tu4q" path="res://scripts/fundo.gd" id="2_h5v22"]
 [ext_resource type="Texture2D" uid="uid://dvsctfwtb5g21" path="res://planetas/sprites/Terra.png" id="3_qmcej"]
 [ext_resource type="Script" uid="uid://c71oduiq8uojd" path="res://scripts/planetas.gd" id="4_fpkt3"]
@@ -23,16 +23,13 @@
 [ext_resource type="Script" uid="uid://d2xd014tkqm4d" path="res://scripts/mini_map.gd" id="18_pjouo"]
 [ext_resource type="Texture2D" uid="uid://v7qen5qxqwu6" path="res://naveSprites/NaveMinimapa.png" id="19_1bctn"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_ihpo2"]
-
 [node name="introCutScene" type="Node2D" unique_id=2069730291]
-script = ExtResource("1_qstax")
 
 [node name="Background" type="Parallax2D" parent="." unique_id=1482744204]
 script = ExtResource("2_h5v22")
 
-[node name="Estrelas" type="AnimatedSprite2D" parent="Background" unique_id=249931261]
-sprite_frames = SubResource("SpriteFrames_ihpo2")
+[node name="estrela" parent="Background" unique_id=546650578 instance=ExtResource("2_fpkt3")]
+position = Vector2(75, 60)
 
 [node name="Earth" type="Sprite2D" parent="." unique_id=895814719 groups=["planetas"]]
 position = Vector2(465.99997, 440)
