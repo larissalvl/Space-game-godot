@@ -1,10 +1,10 @@
 extends Control
 
-const RAIO = 40.0
-const ESCALA = 0.05
+const RAIO = 80.0
+const ESCALA = 0.1
 
 @export var icone_nave_minimapa: Texture2D
-@export var tamanho_icones := Vector2(10.0, 10.0)
+@export var tamanho_icones := Vector2(22.0, 22.0)
 var metade_icones = tamanho_icones/2
 
 func _process(delta):
@@ -12,7 +12,7 @@ func _process(delta):
 
 func _draw():
 	var centro := Vector2(RAIO, RAIO)
-	draw_circle(centro, RAIO, Color(0.0, 0.018, 0.111, 0.894))
+	draw_circle(centro, RAIO, Color(0.0, 0.208, 0.584, 0.255))
 	var nave = get_tree().get_first_node_in_group("nave")
 	if nave == null:
 		return

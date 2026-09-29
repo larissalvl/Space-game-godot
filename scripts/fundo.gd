@@ -1,6 +1,6 @@
 extends Parallax2D
 
-const MOLDE_ESTRELA: PackedScene = preload("res://estrela.tscn")
+const MOLDE_ESTRELA: PackedScene = preload("res://cenas/estrela.tscn")
 
 
 func _ready():

@@ -1,9 +1,9 @@
 extends CharacterBody2D
 
-var velNaveBase = 250
-var velNaveAtual = velNaveBase
-var velAngularBase = PI/2
-var velAngularAtual = velAngularBase
+var vel_nave_base = 300
+var vel_nave_atual = vel_nave_base
+var vel_angular_base = PI/2
+var vel_angular_atual = vel_angular_base
 
 func _ready():
 	var sprite = $AnimatedSprite2D
@@ -12,18 +12,18 @@ func _ready():
 
 func _process(delta):
 	if Input.is_action_pressed("paraEsquerda"):
-		rotation -= velAngularAtual * delta
+		rotation -= vel_angular_atual * delta
 	if Input.is_action_pressed("paraDireita"):
-		rotation += velAngularAtual * delta
+		rotation += vel_angular_atual * delta
 	if Input.is_action_pressed("paraTras"):
-		var movNave = Vector2.DOWN.rotated(rotation) * velNaveAtual
+		var movNave = Vector2.DOWN.rotated(rotation) * vel_nave_atual
 		position += movNave * delta
 	if Input.is_action_pressed("paraFrente"):
-		var movNave = Vector2.UP.rotated(rotation) * velNaveAtual
+		var movNave = Vector2.UP.rotated(rotation) * vel_nave_atual
 		position += movNave * delta
 	if Input.is_action_pressed("Acelerar"):
-		velNaveAtual = 500
-		velAngularAtual = velAngularBase * 2
+		vel_nave_atual = 600
+		vel_angular_atual = vel_angular_base * 2
 	else:
-		velNaveAtual = velNaveBase
-		velAngularAtual = velAngularBase
+		vel_nave_atual = vel_nave_base
+		vel_angular_atual = vel_angular_base
