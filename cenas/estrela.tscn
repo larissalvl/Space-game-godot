@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://duyhp4h5f47lp" path="res://estrelasSprites/estrela_3.PNG" id="3_sg4fv"]
 [ext_resource type="Texture2D" uid="uid://by2s1gdqgsty" path="res://estrelasSprites/estrela_4.PNG" id="4_p2dhu"]
 [ext_resource type="Texture2D" uid="uid://rd24x3yn3brv" path="res://estrelasSprites/estrela_5.PNG" id="5_qq386"]
-[ext_resource type="Script" uid="uid://djin477r6lv5l" path="res://estrela.gd" id="6_34qhf"]
+[ext_resource type="Script" uid="uid://djin477r6lv5l" path="res://scripts/estrela.gd" id="6_34qhf"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1gg3y"]
 animations = [{

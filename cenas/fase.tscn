@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bfjatdruetlo8"]
 
-[ext_resource type="PackedScene" uid="uid://dgmgdpct80vqn" path="res://estrela.tscn" id="2_fpkt3"]
+[ext_resource type="PackedScene" uid="uid://dgmgdpct80vqn" path="res://cenas/estrela.tscn" id="2_fpkt3"]
 [ext_resource type="Script" uid="uid://cagbl8w07tu4q" path="res://scripts/fundo.gd" id="2_h5v22"]
 [ext_resource type="Texture2D" uid="uid://dvsctfwtb5g21" path="res://planetas/sprites/Terra.png" id="3_qmcej"]
 [ext_resource type="Script" uid="uid://c71oduiq8uojd" path="res://scripts/planetas.gd" id="4_fpkt3"]
