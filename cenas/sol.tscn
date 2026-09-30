@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://c1ej2yb2icocw"]
+
+[sub_resource type="Gradient" id="Gradient_57cd0"]
+colors = PackedColorArray(1, 0.9529412, 0.627451, 1, 1, 0.2, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_es2mj"]
+gradient = SubResource("Gradient_57cd0")
+width = 512
+height = 512
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_es2mj"]
+radius = 2830.1194
+
+[node name="sol" type="Node2D" unique_id=1533556478]
+
+[node name="imagem" type="Sprite2D" parent="." unique_id=1993139581]
+position = Vector2(-26.000244, 22.000244)
+scale = Vector2(10, 10)
+texture = SubResource("GradientTexture2D_es2mj")
+
+[node name="zonaPerigo" type="Area2D" parent="." unique_id=615087488]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="zonaPerigo" unique_id=260422707]
+shape = SubResource("CircleShape2D_es2mj")

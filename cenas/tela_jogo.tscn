@@ -19,9 +19,10 @@
 [ext_resource type="Texture2D" uid="uid://dv5ewxykjshr7" path="res://planetas/sprites/Netuno.png" id="15_x0m31"]
 [ext_resource type="Texture2D" uid="uid://bl41ryxiy80gk" path="res://planetas/spritesMinimapa/NetunoMinimap.png" id="16_qstax"]
 [ext_resource type="PackedScene" uid="uid://d1krcvbi30bie" path="res://cenas/nave.tscn" id="17_yvdtj"]
+[ext_resource type="PackedScene" uid="uid://c1ej2yb2icocw" path="res://cenas/sol.tscn" id="21_bg7oi"]
 [ext_resource type="PackedScene" uid="uid://b3h8jm6rrlj43" path="res://cenas/minimapa.tscn" id="21_qmcej"]
 
-[node name="introCutScene" type="Node2D" unique_id=2069730291]
+[node name="jogo" type="Node2D" unique_id=2069730291]
 
 [node name="fundo" parent="." unique_id=1729519060 instance=ExtResource("1_h5v22")]
 
@@ -90,3 +91,6 @@ scale = Vector2(1.3, 1.3)
 position_smoothing_enabled = true
 
 [node name="HUD" parent="." unique_id=1622000054 instance=ExtResource("21_qmcej")]
+
+[node name="sol" parent="." unique_id=1533556478 instance=ExtResource("21_bg7oi")]
+position = Vector2(-9000, 0)
