@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://xkay6drucxv6"]
+
+[ext_resource type="PackedScene" uid="uid://cvpxexmwnwpjf" path="res://cenas/fundo.tscn" id="1_n5k85"]
+[ext_resource type="Script" uid="uid://ce272tvbur00j" path="res://scripts/tela_inicio.gd" id="1_riues"]
+[ext_resource type="FontFile" uid="uid://clssf5nwpl6rq" path="res://fontes/Drumnik/Commercial/Web/WOFF2/Drumnik-Clean.woff2" id="2_7l52t"]
+[ext_resource type="Texture2D" uid="uid://cholur3l6c78c" path="res://botoes/sair_normal.png" id="5_abycc"]
+[ext_resource type="Texture2D" uid="uid://c3lba335qjlhk" path="res://botoes/sair_pressed.png" id="6_wrh6i"]
+[ext_resource type="Texture2D" uid="uid://dwue2eldb6vyn" path="res://botoes/sair_hover.png" id="7_564gd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_es2mj"]
+font_size = 280
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_abycc"]
+load_path = "res://.godot/imported/1.png-4ea6718f9f5c0d4fd681aab182856b54.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_iqj3r"]
+load_path = "res://.godot/imported/iniciar_pressed.png-a9387b42b2cf9c8cab6bc89104bb35d5.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_riues"]
+load_path = "res://.godot/imported/iniciar_hover.png-cb3b5cab5eef230659873a196709c886.ctex"
+
+[node name="tela_inicio" type="Control" unique_id=512303353]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_riues")
+
+[node name="fundo" parent="." unique_id=1729519060 instance=ExtResource("1_n5k85")]
+
+[node name="NomeJogo" type="Label" parent="." unique_id=633697525]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -261.5
+offset_top = 34.0
+offset_right = 261.5
+offset_bottom = 300.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_7l52t")
+theme_override_font_sizes/font_size = 80
+text = "Mazarot"
+label_settings = SubResource("LabelSettings_es2mj")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="botoes" type="HBoxContainer" parent="." unique_id=1655603720]
+propagate_maximum_size = false
+layout_mode = 0
+offset_top = 165.0
+offset_right = 2298.0
+offset_bottom = 1127.0
+scale = Vector2(0.5, 0.5)
+alignment = 1
+
+[node name="botaoJogar" type="TextureButton" parent="botoes" unique_id=2033207743]
+custom_minimum_size = Vector2(600, 160)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = SubResource("CompressedTexture2D_abycc")
+texture_pressed = SubResource("CompressedTexture2D_iqj3r")
+texture_hover = SubResource("CompressedTexture2D_riues")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="botaoSair" type="TextureButton" parent="botoes" unique_id=1532429896]
+custom_minimum_size = Vector2(600, 160)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("5_abycc")
+texture_pressed = ExtResource("6_wrh6i")
+texture_hover = ExtResource("7_564gd")
+ignore_texture_size = true
+stretch_mode = 5
+
+[connection signal="pressed" from="botoes/botaoJogar" to="." method="_on_botao_jogar_pressed"]
+[connection signal="pressed" from="botoes/botaoSair" to="." method="_on_botao_sair_pressed"]
