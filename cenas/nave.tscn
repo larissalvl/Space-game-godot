@@ -35,9 +35,9 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ltewx"]
-radius = 19.026299
+radius = 15.0
 
-[node name="Nave" type="CharacterBody2D" unique_id=639437660]
+[node name="Nave" type="CharacterBody2D" unique_id=639437660 groups=["jogador"]]
 position = Vector2(387, 188)
 script = ExtResource("1_env2g")
 metadata/_edit_group_ = true
@@ -51,5 +51,5 @@ autoplay = "nave"
 frame_progress = 0.9821299
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1492638287]
-position = Vector2(1.2000008, 0.19999695)
+position = Vector2(0.99998856, -2)
 shape = SubResource("CircleShape2D_ltewx")

@@ -19,6 +19,10 @@ config/features=PackedStringArray("4.7", "GL Compatibility")
 window/size/mode=3
 window/stretch/mode="canvas_items"
 
+[global_group]
+
+jogador=""
+
 [input]
 
 ui_select={

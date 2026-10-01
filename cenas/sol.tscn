@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://c1ej2yb2icocw"]
 
+[ext_resource type="Script" uid="uid://cnajc7chu7lp7" path="res://scripts/zona_perigo.gd" id="1_amyc5"]
+
 [sub_resource type="Gradient" id="Gradient_57cd0"]
 colors = PackedColorArray(1, 0.9529412, 0.627451, 1, 1, 0.2, 0, 0)
 
@@ -22,6 +24,10 @@ scale = Vector2(10, 10)
 texture = SubResource("GradientTexture2D_es2mj")
 
 [node name="zonaPerigo" type="Area2D" parent="." unique_id=615087488]
+script = ExtResource("1_amyc5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="zonaPerigo" unique_id=260422707]
 shape = SubResource("CircleShape2D_es2mj")
+
+[connection signal="body_entered" from="zonaPerigo" to="zonaPerigo" method="_on_body_entered"]
+[connection signal="body_exited" from="zonaPerigo" to="zonaPerigo" method="_on_body_exited"]
